@@ -13,6 +13,7 @@ class Post(models.Model):
             blank=True, null=True)
     
     def publish(self):
+        length = length+1
         self.published_date = timezone.now()
         self.save()
 
